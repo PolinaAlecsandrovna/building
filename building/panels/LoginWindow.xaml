@@ -1,0 +1,26 @@
+﻿<Window x:Class="building.panels.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:building.panels"
+        mc:Ignorable="d"
+        Title="Вход - РемонтМаркет" Height="380" Width="420"
+        WindowStartupLocation="CenterScreen"
+        FontFamily="Calibri" Background="White">
+    <StackPanel Margin="28">
+        <TextBlock Text="ООО РемонтМаркет" FontSize="24" FontWeight="Bold" Foreground="#B8860B" HorizontalAlignment="Center" />
+        <TextBlock Text="Вход в систему" Foreground="Gray" Margin="0,4,0,20" HorizontalAlignment="Center"  />
+
+        <TextBlock Text="Логин" Margin="40,0,40,0"/>
+        <TextBox x:Name="LoginBox" Height="30" Margin="40,4,40,20" Panel.ZIndex="-12"/>
+
+        <TextBlock Text="Пароль" Margin="40,0,40,0"/>
+        <PasswordBox x:Name="PasswordBox" Height="30" Margin="40,4,40,20"/>
+
+        <Button Content="Войти" Height="34" Background="#B8860B" Foreground="White" Click="Login_Click" Margin="60,0,60,20"/>
+        
+        <Button Content="Войти как гость" Height="30" Background="#B8860B" Foreground="White" Click="Guest_Click" Margin="80,0,80,0"/>
+
+    </StackPanel>
+</Window>
